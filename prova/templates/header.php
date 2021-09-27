@@ -94,7 +94,7 @@
 			color: #000; 
 			padding: 5px; 
 			margin-top: 10px; 
-			padding: 10px 0 0 5px;"
+			padding: 10px 0 0 5px;
 		}
 	</style>
 </head>
