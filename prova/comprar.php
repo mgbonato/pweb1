@@ -1,12 +1,14 @@
 <?php 
 	include('config/bd_conexao.php');
-    $erros = array('email' => '', 'nomePizza' => '', 'ingredientes' => '');
-    $email = $nomePizza = $ingredientes = '';
+    $erros = array('nome_banda' => '', 'descricao' => '', 'nome_cadastrante_show' => '', 'tipo_entrada' => '', 'token' => '', 'imagem' => '');
+    $erros2 = array('data' => '', 'horario' => '', 'preco' => '', 'estoque' => '', 'local' => '');
+	$nome_banda = $descricao = $nome_cadastrante_show = $tipo_entrada = $token = $imagem = '';
+    $data = $horario = $preco = $estoque = $local = '';
 
 	if (isset($_POST['enviar'])){
 		
 		// Verificar e-mail
-		if (empty($_POST['email'])){
+		/*if (empty($_POST['email'])){
 			$erros['email'] = 'O e-mail é obrigatório.';
 		} else{
 			$email = $_POST['email'];
@@ -14,7 +16,7 @@
 				$erros['email'] = 'Insira um e-mail válido';
                 $email = '';
             }
-		}
+		}*/
 		//Verificar nome da pizza
 		if (empty($_POST['nomePizza'])){
 			$erros['nomePizza'] = 'O nome da pizza é obrigatório.';
